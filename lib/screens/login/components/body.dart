@@ -12,12 +12,13 @@ import 'package:leimena/screens/login/components/background.dart';
 import 'package:leimena/screens/home/home_screen.dart';
 import 'package:leimena/components/already_have_an _account_acheck.dart';
 import 'package:leimena/screens/signup/signup_screen.dart';
-import 'package:leimena/screens/welcome/welcome_screen.dart';
+import 'package:leimena/screens/scan/scan_screen.dart';
 
 class Body extends StatelessWidget {
   const Body({
     Key key,
   }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -26,9 +27,10 @@ class Body extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Padding(padding: EdgeInsets.only(
-              top: 290,
-            ),
+            Padding(
+              padding: EdgeInsets.only(
+                top: 290,
+              ),
             ),
             Text(
               "Sign In",
@@ -51,10 +53,10 @@ class Body extends StatelessWidget {
               press: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute
-                    (builder: (context) {
-                    return SignUpScreen();
-                  },
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return SignUpScreen();
+                    },
                   ),
                 );
               },
@@ -66,18 +68,15 @@ class Body extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return WelcomeScreen();
+                      return ScanScreen();
                     },
                   ),
                 );
               },
             ),
-
           ],
         ),
       ),
-
     );
-
   }
 }

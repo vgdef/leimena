@@ -34,11 +34,11 @@ class Background extends StatelessWidget {
 
           ),
           Positioned(
-            top: 0,
+            top: 57,
             left: 0,
             child: Image.asset(
               "assets/images/person_1.png",
-              width: size.width * 0.3,
+              width: size.width * 0.1,
             ),
           ),
           child,
