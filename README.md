@@ -1,6 +1,6 @@
 # leimena
 
-A new Flutter application.
+Mobile App RSUP Dr. Johannes Leimena Ambon
 
 ## Getting Started
 
