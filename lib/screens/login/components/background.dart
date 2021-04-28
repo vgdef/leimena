@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:leimena/components/text_field_container.dart';
 import 'package:leimena/constants.dart';
 
 class Background extends StatelessWidget {
@@ -23,9 +21,9 @@ class Background extends StatelessWidget {
             padding: EdgeInsets.only(
               left: kDefaultPadding,
               right: kDefaultPadding,
-              bottom: 36 +  kDefaultPadding,
+              bottom: 36 + kDefaultPadding,
             ),
-            height:  size.height * 0.8 - 120 ,
+            height: size.height * 0.8 - 120,
             decoration: BoxDecoration(
               color: kPrimaryColor,
               borderRadius: BorderRadius.only(

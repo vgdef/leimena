@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:footer/footer.dart';
-import 'package:footer/footer_view.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:leimena/constants.dart';
 
 class Background extends StatelessWidget {
@@ -14,16 +11,17 @@ class Background extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Container(height: size.height * 0.8,
+    return Container(
+      height: size.height * 0.8,
       child: Stack(
         children: <Widget>[
           Container(
             padding: EdgeInsets.only(
               left: kDefaultPadding,
               right: kDefaultPadding,
-              bottom: 36 +  kDefaultPadding,
+              bottom: 36 + kDefaultPadding,
             ),
-            height:  size.height * 0.8 -15,
+            height: size.height * 0.8 - 15,
             decoration: BoxDecoration(
               color: kPrimaryColor,
               borderRadius: BorderRadius.only(
@@ -31,7 +29,6 @@ class Background extends StatelessWidget {
                 bottomRight: Radius.circular(36),
               ),
             ),
-
           ),
           Positioned(
             top: 57,
@@ -44,7 +41,6 @@ class Background extends StatelessWidget {
           child,
         ],
       ),
-
     );
   }
 }

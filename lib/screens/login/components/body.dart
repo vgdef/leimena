@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:footer/footer.dart';
-import 'package:footer/footer_view.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:leimena/components/rounded_button.dart';
 import 'package:leimena/components/rounded_input_field.dart';
 import 'package:leimena/components/rounded_password_field.dart';
 import 'package:leimena/constants.dart';
 import 'package:leimena/screens/login/components/background.dart';
-import 'package:leimena/screens/home/home_screen.dart';
 import 'package:leimena/components/already_have_an _account_acheck.dart';
 import 'package:leimena/screens/signup/signup_screen.dart';
 import 'package:leimena/screens/scan/scan_screen.dart';

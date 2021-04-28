@@ -5,7 +5,6 @@ import 'package:leimena/components/already_have_an%20_account_acheck.dart';
 import 'package:leimena/components/rounded_button.dart';
 import 'package:leimena/components/rounded_input_field.dart';
 import 'package:leimena/components/rounded_password_field.dart';
-import 'package:leimena/components/text_field_container.dart';
 import 'package:leimena/constants.dart';
 import 'package:leimena/screens/login/login_screen.dart';
 import 'package:leimena/screens/signup/components/background.dart';
@@ -19,13 +18,14 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Background(
-      child: SingleChildScrollView (
+      child: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget> [
-            Padding(padding: EdgeInsets.only(
-              top: 290,
-            ),
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.only(
+                top: 290,
+              ),
             ),
             Text(
               "Sign Up",
@@ -42,7 +42,7 @@ class Body extends StatelessWidget {
               onChanged: (value) {},
             ),
             RoundedButton(
-              text:"Sign Up",
+              text: "Sign Up",
               color: kForthColor,
               textColor: kTextColor,
               press: () {},
@@ -52,12 +52,12 @@ class Body extends StatelessWidget {
               login: false,
               press: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context){
-                          return LoginScreen();
-                        },
-                    ),
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LoginScreen();
+                    },
+                  ),
                 );
               },
             )
